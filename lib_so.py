@@ -1,6 +1,3 @@
-a ='banco_01.txt'
-b =127
-c =input('Digite: ')
 def decodificar(nome, frase, valor_cripto):
     for salto in range(0, 127):
         new_frase = ''
@@ -16,4 +13,9 @@ def decodificar(nome, frase, valor_cripto):
         save.write(new_frase)
         save.close()
         discrito.close()
-decodificar(a,b,c)
+while True:
+    a ='banco_01.txt'
+    b =127
+    c =input('Digite: ')
+    
+    decodificar(a,b,c)
